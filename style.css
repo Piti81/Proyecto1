@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    }
+
+    h1 {
+    color: rgb(167, 62, 24);
+}
+
+p {
+    color: red;
+}
+
+
+h2 {
+    /*background-color:gray;*/
+    background-color: rgb(179, 168, 176);
+}
+
+form {
+    background-color: beige;
+    color: rgb(149, 153, 153);
+}
+
+
+#pagina-footer {
+    background-color: rgb(187, 204, 186);
+    
+}
+
+nav {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(172, 78, 78);
+}
+
+p {
+    background-color: rgb(212, 149, 71);
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav li {
+    list-style: none;
+}
+
+.trabajos {
+    display: flex;
+}
+.Organizadores {
+    background-color: burlywood;
+    margin-top: 45px;
+    border: 5px solid coral;
+    padding: 15px;
+    display: flex; 
+}
+
+.Botineros {
+    background-color: rgb(190, 150, 110);
+    display: flex;
+    margin-top: 45px;
+    border:5px solid coral;
+    padding: 15px
+}
+
+.Cocinas {
+    background-color: chocolate;
+    display: flex;
+    margin-top: 45px;
+    border: 5px  solid coral;
+    padding: 15px;
+}
+
+
+body{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+
+body{
+    background-image: url(Imagenes/pink-green-leaves.jpg);
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.Medios de pago {
+    background-color: rgb(170, 132, 86);
+    display: inline;
+}
+
+input type{
+    background-color: burlywood;
+    color: chocolate;
+}
+
+h4 {
+    color: black;
+}
+
+header{
+    margin: 15px;
+}
+
+
+body {
+    font-size: 16px;
+    margin: 0 20vh;
+}
+
+
+
