@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagenes/favicon.ico" type="Image/x-icon">
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    
+    
 
     <!--Font awesome y Flaticon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
@@ -15,26 +15,35 @@
 
  <title> Nuevas ideas</title>
 </head>
+
 <body>
+    
     <header id="inicio">
-        <img src="Imagenes/logo.PNG" width="250" alt="logo de la empresa">
+        <img src="imagenes/logo.PNG" width="250" alt="logo de la empresa">
         <h1>Bienvenido a nuestro espacio creativo</h1>
         <h2><em>Muebles a tu medida</em></h2>
         <header class="header">
-            <nav class="nav list">
+                <nav class="nav list">
                 <ul>
                     <li><i class="fa-solid fa-house-user"></i><a href="#home">Home</a></li>
                     <li><i class="fa-brands fa-product-hunt"></i><a href="#algunos_trabajos">Productos</a></li>
-                    <li><i class="fa-solid fa-id-badge"></i><a href="Contacto.html">Contacto</a></li>
-                </ul>
+                    <li><i class="fa-solid fa-id-badge"></i><a href="contacto.html">Contacto</a></li>
+                    <li><i class="fa-solid fa-hammer"></i><a href="#visita_tecnica">Visita tecnica</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><a href="carrito.html">Carrito</a></li>
+                 </ul>
             </nav>
+            </div>
         </header>
     </header>
     
     <main>
+        <section>
+            <h3>Para que nos conozcas</h3>
+            <p><em>Este proyecto surgió con la idea de ayudarte a ordenar, a dejar más lindos tus ambientes con muebles simples, con las medidas que necesitás y con un material de alta calidad!.Bienvenidos a MG Taller,gracias por visitarnos!</em></p>
+        </section>
         <section id="ingreso usuario">
             <h2>Login</h2>
-            <p class="Login">Completá tus datos <strong>para acceder a tu perfil</strong></p>
+            <p class="login">Completá tus datos <strong>para acceder a tu perfil</strong></p>
             <form action="https://formspree.io/f/mgveevge" method="post">
                 <label for="nombre"> Nombre:
                     <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre aquí">
@@ -45,37 +54,60 @@
                 <label for="email">E-mail:
                     <input name="email" type="email" placeholder="Email">
                 </label>
+                </label>
                 <input type="submit" value="Ingresar">
             </form>
         </section>
-        
-        <section id="algunos_trabajos"> <br>
+            <section id="algunos_trabajos"> <br>
             <h3>Sección de trabajos</h3>
             <p><strong>Tenemos un grupo especializado de diseñadores y armadores para que tu mueble sea lo que necesitás</strong></p>
                 <div class="algunos_trabajos">
-                <div class="botineros"><img src="Imagenes/Botinero doble.jpg" alt=""><br> <span>Botinero doble</span></div>
-                <div class="organizadores"><img src="Imagenes/Interior de placard 2.jpg" alt=""><br> <span>Organizadores</span></div>
-                <div class="cocinas"><img src="Imagenes/cocina 2.jpg" alt=""><br> <span>Cocinas</span></div>
-            </div>
+                <div class="botineros">
+                <img src="imagenes/botinero doble.jpg" alt=""><br> <span>Botinero doble</span>
+                <p>Precio:$55.590</p>
+                <p><strong> Nuestro botinero te la posibilidad de guardar tu calzado de manera ordenada y con mucho estilo</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="organizadores">
+                <img src="imagenes/interior de placard 2.jpg" alt=""><br> <span>Organizadores</span>
+                <p>Precio:$125.700</p>
+                <p><strong>Tu mejor opción para tener todo en un solo lugar</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="cocinas">
+                <img src="imagenes/cocina 2.jpg" alt=""><br> <span>Cocinas</span>
+                <p>Precio:$75.699</p>
+                <p><strong>Podemos hacer el modelo que se ajuste a tu presupuesto y espacio</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="recibidor">
+                <img src="imagenes/recibidor.jpg" alt=""><br><span>Recibidor</span>
+                <p>Precio:$38.999</p>
+                <p><strong>Para darle ese toque cálido a tu hogar</strong></p>
+                <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+        
+                 </div>
+        </div>
         </section>
         
         <section id="video armado">
             <h2><strong>¿Cómo se arman?</strong></h2>
-            <video width="400" height="400" controls src="Videos/TUTORIAL Biblioteca cinco estantes.mp4"></video>
+            <video width="400" height="400" controls src="videos/TUTORIAL Biblioteca cinco estantes.mp4"></video>
         </section>
         
-        <section id="Material">
+        <section id="material">
             <h2>Nuestro material utilizado puede ser:</h2>
             <ul>
                 <li>Melamina de 15 mm</li>
-                <img src="Imagenes/Melamina 15mm.PNG" alt="">
+                <img src="imagenes/melamina 15mm.PNG" alt="">
                 <li>Melamina de 18 mm</li>
-                <img src="Imagenes/Melamina 18mm.PNG" alt="">
+                <img src="imagenes/melamina 18mm.PNG" alt="">
                 <li>Laqueado</li>
-                <img src="Imagenes/laqueado.PNG" alt="">
+                <img src="imagenes/laqueado.PNG" alt="">
             </ul>
             <p><em>Trabajamos con los colores clásicos de la línea Faplac y además le sumamos su nueva línea!</em></p>
-            <p>Para conocer más hacé click aquí <a href="https://www.faplaconline.com.ar/home/c/ar-faplac"><img src="Iconos de Flaticon/búsqueda web.png" alt=""></a></p>
+            <p>Para conocer más hacé click aquí <a href="https://www.faplaconline.com.ar/home/c/ar-faplac"><img src="iconos de flaticon/busqueda web.png" alt=""></a></p>
         </section>
         
         <section>
@@ -85,13 +117,13 @@
                 <li>Paypal</li>
                 <li>Transferencia bancaria</li>
             </ul>
-            <img src="Imagenes/MP.PNG" srcset="">
-            <img src="Imagenes/Paypal.PNG" alt="">
-            <img src="Imagenes/Transferencia bancaria.PNG" alt="">
+            <img src="imagenes/mp.PNG" srcset="">
+            <img src="imagenes/paypal.PNG" alt="">
+            <img src="imagenes/transferencia bancaria.PNG" alt="">
         </section>
         
         <section>
-            <h4>Para enviar tu comprobante de pago hacé click aquí <a href="https://mail.google.com/mail/u/1/#inbox"><img src="Iconos de Flaticon/contacto.png" alt=""></a></h4>
+            <h4>Para enviar tu comprobante de pago hacé click aquí <a href="https://mail.google.com/mail/u/1/#inbox"><img src="iconos de flaticon/contacto.png" alt=""></a></h4>
         </section>
         
         <section>
@@ -111,6 +143,7 @@
         </section>
         
         <section>
+            <section id="visita_tecnica"> <br>
             <h3>Reservá tu lugar para la visita técnica</h3>
             <form action="https://formspree.io/f/mgveevge" method="post">
                 <label for="nombre"> Nombre:
@@ -132,14 +165,30 @@
                         <option>Sábado por la mañana</option>
                     </select>
                 </p>
+                <h3>Selecciona una Zona de Servicio</h3>
+
+                <!-- Combo desplegable con diferentes opciones -->
+                <select id="zona" onchange="verificarZona()">
+                    <option value="">Seleccione una zona...</option>
+                    <option value="CABA">CABA</option>
+                    <option value="GBA SUR">GBA SUR</option>
+                    <option value="GBA NORTE">GBA NORTE</option>
+                    <option value="GBA ESTE">GBA ESTE</option>
+                    <option value="Interior">Interior</option>
+                </select>
+            
+                <!-- Aquí se mostrará el mensaje -->
+                <p id="MensajeZona"></p>
                 <label for="Mensaje">Mensaje:</label>
+    
+    <form action=""></script>
                 <textarea id="Mensaje" name="Mensaje" rows="4" cols="40" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
         
         <section>
-            <p class="Importante">Importante: Si no vivís dentro de CABA antes de reservar tu visita técnica asegurate que estés dentro de este radio:</p>
+            <p class="importante">Importante: Si no vivís dentro de CABA antes de reservar tu visita técnica asegurate que estés dentro de este radio:</p>
             <table border="1">
                 <tr>
                     <td>GBA Oeste</td>
@@ -196,7 +245,7 @@
             </div>
         </div>
     </section>
-    
+ <script src="script.js"></script>   
     <footer>
         <ul>
             <p>También nos podes seguir en:</p>

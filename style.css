@@ -108,6 +108,17 @@ section {
     justify-content: center;
 }
 
+#visita_tecnica {
+    padding: 20px;
+    text-align: center; 
+}
+
+.visita_tecnica {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+}
+
 #algunos_trabajos {
     padding: 20px;
     text-align: center; 
@@ -133,7 +144,7 @@ section {
 }
 
 
-#Material {
+#material {
     padding: 20px;
     background-color: #9e8181;
     border: 1px solid #ddd;
@@ -143,12 +154,12 @@ section {
 
 }
 
-#Material h2 {
+#material h2 {
     font-size: 24px;
     margin-bottom: 15px;
 }
 
-#Material ul {
+#material ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -160,29 +171,29 @@ section {
     
 }
 
-#Material img {
+#material img {
     height: 40%;
     margin: 5px;
     border-radius: 4px; 
     }
 
-#Material p {
+#material p {
     font-size: 16px;
     margin: 10px 0; 
 }
 
-#Material a {
+#material a {
     text-decoration: none;
     color: #007BFF;
 }
 
-#Material a img {
+#material a img {
     width: 40px; 
     margin-left: 5px; 
     max width: 100%;
 }
 
-#Material a:hover {
+#material a:hover {
     text-decoration: underline;
     }
 
@@ -296,9 +307,40 @@ section {
           
     grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
         }
+
     }
     
+    button.add-to-cart {
+    
+   
+        background-color: #6abeba;
+                    
+        color: #fff;
+            
+        border: none;
+            
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+            
+          
+        font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
         
+        button.add-to-cart:hover {
+            background-color: #b3005a;
+        }
+    
+   button {
+    appearance: auto;
+    writing-mode: horizontal-tb;
+    background-color: aquamarine;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+   }     
 
 
 /* Footer */
@@ -329,6 +371,6 @@ footer li a:hover {
 footer p {
     margin: 10px 0; 
     font-size: 14px; 
-    color: #a19c9c; 
+    color: #b39999; 
     text-align: center; 
 }
