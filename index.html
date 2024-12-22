@@ -29,7 +29,7 @@
                     <li><i class="fa-brands fa-product-hunt"></i><a href="#algunos_trabajos">Productos</a></li>
                     <li><i class="fa-solid fa-id-badge"></i><a href="contacto.html">Contacto</a></li>
                     <li><i class="fa-solid fa-hammer"></i><a href="#visita_tecnica">Visita tecnica</a></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i><a href="carrito.html">Carrito</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><a href="#carrito">Carrito</a></li>
                  </ul>
             </nav>
             </div>
@@ -58,57 +58,89 @@
                 <input type="submit" value="Ingresar">
             </form>
         </section>
-            <section id="algunos_trabajos"> <br>
-            <h3>Sección de trabajos</h3>
-            <p><strong>Tenemos un grupo especializado de diseñadores y armadores para que tu mueble sea lo que necesitás</strong></p>
+    <section id="algunos_trabajos"> <br>
+        <h3>Sección de trabajos</h3>
+        <p><strong>Tenemos un grupo especializado de diseñadores y armadores para que tu mueble sea lo que necesitás</strong></p>
+        
+        <section id="contenedorProductos" class="card-container">
                 <div class="algunos_trabajos">
-                <div class="botineros">
-                <img src="imagenes/botinero doble.jpg" alt=""><br> <span>Botinero doble</span>
-                <p>Precio:$55.590</p>
-                <p><strong> Nuestro botinero te la posibilidad de guardar tu calzado de manera ordenada y con mucho estilo</strong></p>
-                <button class="add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="organizadores">
-                <img src="imagenes/interior de placard 2.jpg" alt=""><br> <span>Organizadores</span>
-                <p>Precio:$125.700</p>
-                <p><strong>Tu mejor opción para tener todo en un solo lugar</strong></p>
-                <button class="add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="cocinas">
-                <img src="imagenes/cocina 2.jpg" alt=""><br> <span>Cocinas</span>
-                <p>Precio:$75.699</p>
-                <p><strong>Podemos hacer el modelo que se ajuste a tu presupuesto y espacio</strong></p>
-                <button class="add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="recibidor">
-                <img src="imagenes/recibidor.jpg" alt=""><br><span>Recibidor</span>
-                <p>Precio:$38.999</p>
-                <p><strong>Para darle ese toque cálido a tu hogar</strong></p>
-                <button class="add-to-cart">Agregar al carrito</button>
-                </div>
-        
-                 </div>
+        <div id="contenedorProductos" class="productos">
+        </div>          
+        <div class="botineros">
+            <img src="imagenes/botinero doble.jpg" alt=""><br> <span>Botinero doble</span>
+            <p>Precio:$55590</p>
+            <p><strong> Nuestro botinero te la posibilidad de guardar tu calzado de manera ordenada y con mucho estilo</strong></p>
+            <a href="">Ver + info</a>
+            <button class="boton-agregar-carrito">Agregar al carrito</button>
         </div>
-        </section>
+        <div class="organizadores">
+        <img src="imagenes/interior de placard 2.jpg" alt=""><br> <span>Organizadores</span>
+        <p>Precio promocional:$125700</p>
+        <p><strong>Tu mejor opción para tener todo en un solo lugar</strong></p>
+        <a href="">Ver + info</a>
+        <button class="boton-agregar-carrito">Agregar al carrito</button>
+        </div>
+
+        <div class="cocinas">
+        <img src="imagenes/cocina 2.jpg" alt=""><br> <span>Cocinas</span>
+        <p>Precio:$75699</p>
+        <p><strong>Podemos hacer el modelo que se ajuste a tu presupuesto y espacio</strong></p>
+        <a href="">Ver + info</a>
+        <button class="boton-agregar-carrito">Agregar al carrito</button>
+        </div>
         
-        <section id="video armado">
-            <h2><strong>¿Cómo se arman?</strong></h2>
-            <video width="400" height="400" controls src="videos/TUTORIAL Biblioteca cinco estantes.mp4"></video>
-        </section>
+        <div class="recibidor">
+        <img src="imagenes/recibidor.jpg" alt=""><br><span>Recibidor</span>
+        <p>Precio:$38999</p>
+        <p><strong>Para darle ese toque cálido a tu hogar</strong></p>
+        <a href="">Ver + info</a>
+        <input type="number">        
+        <button class="boton-agregar-carrito">Agregar al carrito</button>
+        </div>  
+                         
+    </section>
+    
+<section id="carrito">     
+  
+    <h2>Carrito de compras</h2>
+    <ul id="lista-de-productos"></ul>
+    <li>Botinero $55590</li>
+    <li>Organizadores $125700</li>
+    <li>Cocina $75999</li>
+    <li>Recibidor $38999</li>
+    <p id="total">Total a pagar: $0</p> 
+    <input type="button" value="Borrar">     
+    <input type="button" value="Ir a pagar">
+
+</section>
+  
+
+
+
+<input type="button" value="HacerClic">
+
+
+
+
         
-        <section id="material">
-            <h2>Nuestro material utilizado puede ser:</h2>
-            <ul>
-                <li>Melamina de 15 mm</li>
-                <img src="imagenes/melamina 15mm.PNG" alt="">
-                <li>Melamina de 18 mm</li>
-                <img src="imagenes/melamina 18mm.PNG" alt="">
-                <li>Laqueado</li>
-                <img src="imagenes/laqueado.PNG" alt="">
-            </ul>
-            <p><em>Trabajamos con los colores clásicos de la línea Faplac y además le sumamos su nueva línea!</em></p>
-            <p>Para conocer más hacé click aquí <a href="https://www.faplaconline.com.ar/home/c/ar-faplac"><img src="iconos de flaticon/busqueda web.png" alt=""></a></p>
-        </section>
+<section id="video armado">
+<h2><strong>¿Cómo se arman?</strong></h2>
+ <video width="400" height="400" controls src="videos/tutorial biblioteca cinco estantes.mp4"></video>
+</section>
+        
+<section id="material">
+<h2>Nuestro material utilizado puede ser:</h2>
+<ul>
+<li>Melamina de 15 mm</li>
+<img src="imagenes/melamina 15mm.PNG" alt="">
+<li>Melamina de 18 mm</li>
+<img src="imagenes/melamina 18mm.PNG" alt="">
+<li>Laqueado</li>
+<img src="imagenes/laqueado.PNG" alt="">
+</ul>
+<p><em>Trabajamos con los colores clásicos de la línea Faplac y además le sumamos su nueva línea!</em></p>
+<p>Para conocer más hacé click aquí <a href="https://www.faplaconline.com.ar/home/c/ar-faplac"><img src="iconos de flaticon/busqueda web.png" alt=""></a></p>
+</section>
         
         <section>
             <h1>Medios de pago seleccionados</h1>
@@ -245,7 +277,7 @@
             </div>
         </div>
     </section>
- <script src="script.js"></script>   
+ 
     <footer>
         <ul>
             <p>También nos podes seguir en:</p>
@@ -253,5 +285,10 @@
         </ul>
     </footer>
         <p>@2024 MG Taller, todos los derechos están reservados</p>
+<div>
+<label for="btnHacerClic">Cantidad de clics: </label>
+<label id="lbclics">0</label>
+</div>
+<script src="script.js"></script>  
 </body>
 </html>
