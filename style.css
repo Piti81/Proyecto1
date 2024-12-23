@@ -10,7 +10,7 @@ body {
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
-    background-image: url("Imagenes/pink-green-leaves.jpg");
+    background-image: url("./img/pink-green-leaves.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -33,6 +33,27 @@ header img {
 
 header h1, header h2 {
     margin: 10px 0;
+}
+
+
+.card_conteiner{
+    border: 2px rgb(174, 163, 162) solid;
+    margin: 1.8rem;
+    padding: 2.8rem;
+    
+}
+.card{
+    border: 2px rgb(174, 163, 162) solid;
+    padding: 2rem;
+    margin-left: 2rem auto;
+    margin-right:2rem auto;
+    img{
+        border: #007BFF solid 1px;
+        &:hover{
+            border: #aa3375 solid 2px;
+        }
+    }
+
 }
 
 /* Navegación */
@@ -192,7 +213,7 @@ section {
 #material a img {
     width: 40px; 
     margin-left: 5px; 
-    max width: 100%;
+    max-width: 100%;
 }
 
 #material a:hover {
@@ -246,11 +267,17 @@ section {
     }
 
 
+
+
+
+
 /* Media Queries */
-@media (max-width: 768px) 
+@media (max-width: 768px) {
+
     .nav ul {
         flex-direction: column;
     }
+}
 
     form {
         width: 90%;
@@ -294,12 +321,14 @@ section {
     
     /* Estilos para pantallas más pequeñas */
     @media (max-width: 768px) {
-    .opiniones-container    
+    .opiniones-container    {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
     }
         
         
      
-    grid-template-columns: repeat(2, 1fr);
         
     
     
@@ -331,7 +360,7 @@ section {
 .producto img, .carrito-item img{
     width: 100%;
     height: auto;
-    max: height 100px;
+    max-width: height 100px;
     object-fit: cover;
 }
 
@@ -345,7 +374,7 @@ section {
     }
 
 .boton-agregar-carrito:hover{
-    background-color: #f09f9f9;
+    background-color: #f0f9f9;
 }
 
 #carrito{
@@ -371,7 +400,7 @@ padding: 0;
 .carrito-item {
 display: flex; 
 justify-content: space-between;
-align-align-items: center;
+align-items: center;
 margin-bottom: 10px;
 }
 
